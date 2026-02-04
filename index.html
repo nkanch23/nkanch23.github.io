@@ -1,128 +1,229 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nikhila Chitta</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikhila Chitta</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <div id="dhead" class="container">
-      <div class="row" style="padding-top: 80px;">
-        <div id="dpic">
-          <img src="assets/me.png"/>
+<body>
+  <main class="page">
+
+    <!-- HERO -->
+    <header class="hero container">
+      <div class="hero-left">
+        <h1 class="name">Nikhila Chitta</h1>
+        <p class="headline">Software Engineer , AI/ML </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="assets/Nikhila_CV.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-ghost" href="#projects">View Projects</a>
         </div>
-        <div id="ddesc">
-          <h1>Nikhila Chitta</h1>
-          <div id="dico">
-            <a href="https://www.linkedin.com/in/nikhila-c-289185380/"><img src="assets/clinkedin.svg" class="iico" /></a>
-            <a href="https://github.com/nkanch23"><img src="assets/cgithub.svg" class="iico"/></a>
+
+        <div class="social">
+          <a class="social-link" href="https://www.linkedin.com/in/nikhila-c-289185380/" target="_blank" rel="noopener">
+            <img src="assets/clinkedin.svg" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="https://github.com/nkanch23" target="_blank" rel="noopener">
+            <img src="assets/cgithub.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img class="avatar" src="assets/me.JPG" alt="Nikhila Chitta" />
+      </div>
+    </header>
+
+    <section class="divider container"></section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="trow">
+          <div class="tdate">Mar 2018 – Jun 2022</div>
+
+          <div class="tline">
+            <span class="dot"></span>
+            <img class="logo" src="assets/accenture.png" alt="Accenture" />
+          </div>
+
+          <div class="tcontent">
+            <div class="trole"><strong>Senior Software Engineer</strong> • Accenture</div>
+            <p>
+              Engineered and deployed end-to-end data pipelines using PySpark, Airflow, and Kafka, reducing ETL runtime by 40%
+              and improving data readiness for business reporting. Developed microservices with FastAPI, Docker, and Kubernetes,
+              enabling modular deployments and improving scalability across client environments. Automated ML training and deployment
+              pipelines with AWS SageMaker and Vertex AI, enabling continuous retraining and monitoring of models. Built NLP pipelines
+              for entity recognition, embeddings, and semantic search using BERT, ElasticSearch, and Word2Vec, applied to finance and
+              healthcare domains. Mentored junior engineers and participated in system design reviews, bridging concept ideation and
+              production deployment.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <hr>
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2 class="section-title">Education</h2>
 
-    <div id="experience" class="container">
-        <div class="ctitle">Experience</div>
-        <div class="entry row">
-            <div class="timespan">
-              Mar 2018 - Jun 2022
-            </div>
-            <div class="ico">
-              <div class="entry-dot"></div>
-              <img src="assets/accenture.png" />
-            </div>
-            <div class="desc">
-               <strong>Senior Software Engineer at Accenture:</strong> Engineered and deployed end-to-end data pipelines using PySpark, Airflow, and Kafka, reducing ETL runtime by 40% and improving data readiness for business reporting. Developed microservices with FastAPI, Docker, and Kubernetes, enabling modular deployments and improving scalability across client environments. Automated ML training and deployment pipelines with AWS SageMaker and Vertex AI, enabling continuous retraining and monitoring of models. Built NLP pipelines for entity recognition, embeddings, and semantic search using BERT, ElasticSearch, and Word2Vec, applied to finance and healthcare domains. Mentored junior engineers, participated in system design reviews, bridging the gap between concept ideation and production deployment.
-            </div>
-        </div>
-    </div>
+      <div class="timeline">
+        <div class="trow">
+          <div class="tdate">Dec 2025</div>
 
-    <div id="education" class="container">
-        <div class="ctitle">Education</div>
-        <div class="entry row">
-            <div class="timespan">
-              Aug 2025
-            </div>
-            <div class="ico">
-              <div class="entry-dot"></div>
-              <img src="assets/uncc.png" />
-            </div>
-            <div class="desc">
-               <strong>UNC Charlotte:</strong> Masters in Computer Science.
-            </div>
-        </div>
-        <div class="entry row">
-            <div class="timespan">
-              May 2017
-            </div>
-            <div class="ico">
-              <div class="entry-dot"></div>
-              <img src="assets/jntuk.jpeg" />
-            </div>
-            <div class="desc">
-               <strong>JNTU Kakinada:</strong> BS in Electrical Engineering.
-            </div>
-        </div>
-    </div>
+          <div class="tline">
+            <span class="dot"></span>
+            <img class="logo" src="assets/uncc.png" alt="UNC Charlotte" />
+          </div>
 
-    <div class="container">
-        <div class="ctitle">Selected Projects</div>
-  
-        <div class="pub">
-          <div class="pub-title"><a>Multi-Agent Conversational Al System</a></div>
-          <div class="pub-venue">Python, OpenAI, LLMs, Orchestration, System Design</div>
-          <div class="pub-authors">Architected a production-grade multi-agent IVR system with dynamic policy routing and hierarchical intent classification. Implemented orchestrator-fulfillment agent pattern enabling context-aware handoffs and scalable policy management. Designed intent disambiguation logic with L1/L2/L3 classification hierarchy, reducing ambiguous queries by 40% through strategic clarification flows. System demonstrates advanced prompt engineering, stateful conversation management, and modular architecture supporting extensible policy definitions for enterprise customer service automation.</div>
+          <div class="tcontent">
+            <div class="trole"><strong>UNC Charlotte</strong> • MS in Computer Science</div>
+          </div>
         </div>
-  
-        <div class="pub">
-          <div class="pub-title"><a>Hybrid RAG Document QA System</a></div>
-          <div class="pub-venue">Python, FAISS, LLMs, NLP, Vector Databases, Gemini</div>
-          <div class="pub-authors">Built production-grade retrieval-augmented generation (RAG) system combining dense vector search (FAISS) with sparse TF-IDF retrieval for document question answering. Implemented semantic reranking pipeline that improved retrieval precision by re-scoring candidates using cross-encoder similarity. Designed answer verification framework validating LLM outputs against source documents for factual accuracy and claim verification. System features persistent vector index storage, intelligent document chunking with sentence boundary detection, and batch embedding generation. Demonstrates end-to-end RAG pipeline from PDF processing through verified response generation with source attribution.</div>
-        </div>
-  
-        <div class="pub">
-          <div class="pub-title"><a>AvatarCLIP: Zero-Shot Text-Driven 3D Avatar Generation</a></div>
-          <div class="pub-venue">Python, PyTorch, GPU, CLIP, VAE</div>
-          <div class="pub-authors">Developed a zero-shot pipeline for text-to-3D avatar generation and animation by integrating CLIP-based vision-language supervision with VAE latent modeling, NeuS volume rendering, and SMPL body representations. Implemented motion synthesis with transformers and clustering techniques to achieve realistic avatar geometry and animations from natural language prompts.</div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="ctitle">Skills</div>
-        <div class="pub">
-            <div class="pub-title">Languages:</div>
-            <div class="pub-authors">Java, SQL, Python, Javascript, C, C++, PySpark, Linux/Shell/Bash</div>
-        </div>
-        <div class="pub">
-            <div class="pub-title">Cloud:</div>
-            <div class="pub-authors">AWS (EC2/ECS, S3, Redshift, Glue, Quicksight, Sagemaker, Dynamo, Athena), GCP (BigQuery, GCS, VertexAI)</div>
-        </div>
-        <div class="pub">
-            <div class="pub-title">Generative AI:</div>
-            <div class="pub-authors">GPT, Claude, Gemini, LangChain, LangGraph, Pinecone, FAISS, OpenAI Agents, OpenRouter, MCP, PEFT/LORA, KV Routing</div>
-        </div>
-        <div class="pub">
-            <div class="pub-title">AI/ML:</div>
-            <div class="pub-authors">NLP, NER, Linear models, RAG, ElasticSearch, Embeddings, BERT, Information Retrieval (IR), Word2Vec, Clustering, SHAP, Fairness & Bias</div>
-        </div>
-        <div classs="pub">
-            <div class="pub-title">Frameworks:</div>
-            <div class="pub-authors">FastAPI, PyTorch, Hadoop, Ray, Airflow, Kafka, Angular, K8s, Docker, Nvidia Dynamo, Redis</div>
-        </div>
-    </div>
+        <div class="trow">
+          <div class="tdate">May 2017</div>
 
-        <div class="container">
-      <div class="ctitle">Download</div>
-      <div class="pub">
-        <div class="pub-title"><a href="assets/Nikhila_CV.pdf">Download Resume</a></div>
+          <div class="tline">
+            <span class="dot"></span>
+            <img class="logo" src="assets/jntuk.jpeg" alt="JNTU Kakinada" />
+          </div>
+
+          <div class="tcontent">
+            <div class="trole"><strong>JNTU Kakinada</strong> • BS in Electrical Engineering</div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br>
+  <!-- Data Projects     
+<section id="Dataprojects" class="section container">
+      <h2 class="section-title">Data Projects</h2>
+      <div id="projects-data" class="subsection">
+        <article class="card">
+          <h3 class="card-title">Project1</h3>
+          <div class="meta">Python • OpenAI • LLMs • Orchestration • System Design</div>
+          <p class="card-body">
+            
+          </p>
+        </article>
 
-  </body>
+        <article class="card">
+          <h3 class="card-title">Project2</h3>
+          <div class="meta">Python • FAISS • NLP • Vector DB • Gemini</div>
+          <p class="card-body">
+          
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Project3</h3>
+          <div class="meta">Python • PyTorch • GPU • CLIP • VAE</div>
+          <p class="card-body">
+          
+          </p>
+        </article>
+      </div>
+    </section>-->
+
+    <!--AI PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div id="projects-ai" class="subsection">
+        <article class="card">
+          <h3 class="card-title">Multi-Agent Conversational AI System</h3>
+          <div class="meta">Python • OpenAI • LLMs • Orchestration • System Design</div>
+          <p class="card-body">
+            Architected a production-grade multi-agent IVR system with dynamic policy routing and hierarchical intent classification.
+            Implemented orchestrator–fulfillment agent pattern enabling context-aware handoffs and scalable policy management.
+            Designed intent disambiguation logic with L1/L2/L3 hierarchy, reducing ambiguous queries by 40% through strategic
+            clarification flows. Demonstrates advanced prompt engineering, stateful conversation management, and modular architecture.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Hybrid RAG Document QA System</h3>
+          <div class="meta">Python • FAISS • NLP • Vector DB • Gemini</div>
+          <p class="card-body">
+            Built retrieval-augmented generation (RAG) system combining dense vector search (FAISS) with sparse TF-IDF retrieval.
+            Implemented semantic reranking to improve retrieval precision via cross-encoder similarity. Designed answer verification
+            against sources for factual accuracy with citations. Includes persistent index storage, smart chunking, and batch embeddings.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">AvatarCLIP: Zero-Shot Text-Driven 3D Avatar Generation</h3>
+          <div class="meta">Python • PyTorch • GPU • CLIP • VAE</div>
+          <p class="card-body">
+            Developed a zero-shot pipeline for text-to-3D avatar generation and animation by integrating CLIP-based vision-language
+            supervision with VAE latent modeling, NeuS volume rendering, and SMPL representations. Implemented motion synthesis with
+            transformers and clustering to generate realistic geometry and animation from natural language prompts.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skill-grid">
+        <div class="skill-block">
+          <div class="skill-title">Languages</div>
+          <div class="chips">
+            <span class="chip">Java</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">JavaScript</span>
+            <span class="chip">C</span><span class="chip">C++</span><span class="chip">PySpark</span><span class="chip">Linux/Shell/Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">Cloud</div>
+          <div class="chips">
+            <span class="chip">AWS</span><span class="chip">EC2/ECS</span><span class="chip">S3</span><span class="chip">Redshift</span>
+            <span class="chip">Glue</span><span class="chip">QuickSight</span><span class="chip">SageMaker</span><span class="chip">DynamoDB</span>
+            <span class="chip">Athena</span><span class="chip">GCP</span><span class="chip">BigQuery</span><span class="chip">GCS</span><span class="chip">Vertex AI</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">Generative AI</div>
+          <div class="chips">
+            <span class="chip">GPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">LangChain</span>
+            <span class="chip">LangGraph</span><span class="chip">Pinecone</span><span class="chip">FAISS</span><span class="chip">OpenAI Agents</span>
+            <span class="chip">OpenRouter</span><span class="chip">MCP</span><span class="chip">PEFT/LoRA</span><span class="chip">KV Routing</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">AI/ML</div>
+          <div class="chips">
+            <span class="chip">NLP</span><span class="chip">NER</span><span class="chip">Linear Models</span><span class="chip">RAG</span>
+            <span class="chip">ElasticSearch</span><span class="chip">Embeddings</span><span class="chip">BERT</span><span class="chip">IR</span>
+            <span class="chip">Word2Vec</span><span class="chip">Clustering</span><span class="chip">SHAP</span><span class="chip">Fairness & Bias</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-title">Frameworks</div>
+          <div class="chips">
+            <span class="chip">FastAPI</span><span class="chip">PyTorch</span><span class="chip">Hadoop</span><span class="chip">Ray</span>
+            <span class="chip">Airflow</span><span class="chip">Kafka</span><span class="chip">Angular</span><span class="chip">Kubernetes</span>
+            <span class="chip">Docker</span><span class="chip">Redis</span><span class="chip">NVIDIA Dynamo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <span>© <script>document.write(new Date().getFullYear())</script> Nikhila Chitta</span>
+    </footer>
+
+  </main>
+</body>
 </html>
